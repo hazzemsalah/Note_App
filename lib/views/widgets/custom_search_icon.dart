@@ -6,6 +6,7 @@ class CustomSearchIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       height: 47,
       width: 47,
       decoration: BoxDecoration(

@@ -1,3 +1,4 @@
+import 'package:_9_note_app/views/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class AddNoteButtonSheet extends StatelessWidget {
@@ -5,6 +6,16 @@ class AddNoteButtonSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        children: [
+          SizedBox(height: 32),
+          CustomTextField(),
+        ],
+      ),
+    );
   }
 }
+
+

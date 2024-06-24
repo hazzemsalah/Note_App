@@ -1,4 +1,3 @@
-
 import 'package:_9_note_app/views/widgets/custom_note_item.dart';
 import 'package:flutter/material.dart';
 

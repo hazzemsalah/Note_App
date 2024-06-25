@@ -1,4 +1,4 @@
- import 'package:bloc/bloc.dart';
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 
 class SimpleBlocObserver implements BlocObserver {
@@ -31,5 +31,4 @@ class SimpleBlocObserver implements BlocObserver {
   void onTransition(Bloc bloc, Transition transition) {
     // TODO: implement onTransition
   }
-
 }

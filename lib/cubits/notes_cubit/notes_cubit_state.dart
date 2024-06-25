@@ -5,16 +5,3 @@ sealed class NotesCubitState {}
 
 final class NotesCubitInitial extends NotesCubitState {}
 
-final class NotesCubitLoading extends NotesCubitState {}
-
-final class NotesCubitSuccess extends NotesCubitState {
-  final List<NoteModel> notes;
-
-  NotesCubitSuccess(this.notes);
-}
-
-final class NotesCubitFailure extends NotesCubitState {
-  final String errMessage;
-
-  NotesCubitFailure({required this.errMessage});
-}

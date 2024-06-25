@@ -50,7 +50,9 @@ class NoteItem extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 32),
                 child: IconButton(
                   padding: const EdgeInsets.only(left: 16),
-                  onPressed: () {},
+                  onPressed: () {
+                    note.delete();
+                  },
                   icon: const Icon(
                     FontAwesomeIcons.trash,
                     color: Colors.black,

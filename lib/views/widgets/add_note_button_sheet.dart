@@ -1,10 +1,8 @@
 import 'package:_9_note_app/cubits/add_note_cubit/add_note_cubit.dart';
+import 'package:_9_note_app/cubits/notes_cubit/notes_cubit_cubit.dart';
 import 'package:_9_note_app/views/widgets/add_note_form.dart';
-import 'package:_9_note_app/views/widgets/costum_bottun.dart';
-import 'package:_9_note_app/views/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class AddNoteButtonSheet extends StatelessWidget {
   const AddNoteButtonSheet({super.key});
@@ -19,6 +17,7 @@ class AddNoteButtonSheet extends StatelessWidget {
             print("addind failed =>${state.errMessage}");
           }
           if (state is AddNoteSuccess) {
+            BlocProvider.of<NotesCubit>(context).fetchAllNotes();
             Navigator.pop(context);
           }
         },
